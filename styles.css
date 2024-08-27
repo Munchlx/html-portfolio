@@ -1,0 +1,131 @@
+body {
+  background-color: #33363D;
+  color: white;
+  font-family: 'Poppins', cursive;
+  margin: 0 150px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 500px;
+  column-gap: 100px;
+}
+
+h1 > span {
+  font-style: normal;
+  color: #4ECCA3;
+}
+.h2-section1 {
+  font-style: normal;
+  color: white;
+}
+h2 {
+  font-style: normal;
+  color: #4ECCA3;
+}
+.section-1 {
+  grid-column-start: 1;
+  position: fixed;
+  width: 500px;
+}
+.section-1 > p {
+  opacity: 0.5;
+}
+.btn {
+  margin-top: 20px;
+}
+.buttons {
+  display: block;
+  font-family: 'Poppins', cursive;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  color: rgb(78, 204, 163);
+  border-style: none;
+  height: 30px;
+  width: 95px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow:inset 2px 2px 3px rgb(0, 0, 0, 0.30);
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: #4ECCA3;
+  color: white;
+  width: 150px;
+  transition: 0.90s;
+}
+.buttons:active {
+  opacity: 0.5;
+}
+.CV {
+  color:#4ECCA3;
+  cursor: pointer;
+}
+.social-links {
+  grid-row-start: 2;
+  display: flex;
+  padding-top: 150px;
+  grid-template-columns: 50px 50px 50px;
+  cursor: pointer;
+}
+.social-links > div > img {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.section-2 {
+  grid-column-start: 2;
+}
+.skill-sets {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 100px;
+}
+.skillDiv {
+  display: flex;
+  width: 200px;
+  height: 60px;
+}
+.skill-types {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #4ECCA3;
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.skill-types > img {
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+@media(max-width: 540px) {
+ body {
+  display: block;
+  text-align: center;
+  margin: 0;
+ }
+.section-1 {
+  display: inline-block;
+  position: relative;
+}
+.btn {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.social-links {
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+}
